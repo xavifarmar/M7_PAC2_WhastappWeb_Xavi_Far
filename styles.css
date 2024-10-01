@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Tipografía */
+body, input, button, p, h3, h4 {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 14px;
+    color: #b0b0b0;
+}
+
+/* Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 25%;
+    overflow-y: auto;
+}
+
+.header {
+    background-color: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px;
+    height: 80px;
+}
+
+.profile-photo {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-right: 10px; 
+}
+
+.icon-container {
+    display: flex;
+    align-items: center; 
+}
+
+.icon-large {
+    margin-left: 10px; 
+    font-size: 24px; 
+}
+
+
+.search-bar {
+    background-color: #fafafa;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+}
+
+input.input-search {
+    height: 25px;
+    width: 100%;
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.inbox {
+    display: flex;
+    flex-direction: column;
+    overflow-y:scroll;
+   
+}
+.inbox::-webkit-scrollbar{
+    display: none;
+}
+
+.chat-item {
+    display: flex;
+    align-items: flex-start;
+    border: 0.5px solid rgb(155, 155, 155);
+    padding: 10px;
+}
+
+
+.chat-profile-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-message {
+    flex-grow: 1;
+}
+
+.username-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-username {
+    margin: 0;
+}
+
+.chat-time {
+    font-size: 0.8em;
+    color: #b0b0b0;
+    margin-left: 10px;
+}
+
+.last-message {
+    margin-top: 5px;
+    color: #555;
+}
+
+.chat-item:hover {
+    background-color: #eaeaec;
+}
+
+/* Chat Area */
+.chat-area {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 75%;
+    border: 1px solid #ccc;
+}
+
+.chat-info {
+    background-color: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    height: 65px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.chat-username {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.last-seen {
+    margin: 0;
+    font-size: 0.9em;
+    color: #b0b0b0;
+}
+
+.chat-options {
+    display: flex;
+    align-items: center;
+}
+
+.chat {
+    flex-grow: 1;
+    background-image: url(./img/fondo-chat.jpg);
+    padding: 10px;
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* Texting Bar */
+.texting-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #efefef;
+    border-top: 1px solid #ccc;
+    height: 60px;
+}
+
+.message-input {
+    height: 40px;
+    width: 92%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Icon Styles */
+.fa-chat-icons {
+    font-size: 25px;
+    color: #666;
+}
+
+/* Check Icon */
+.check-icon {
+    font-size: 14px;
+    color: gray;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+.sender-message .check-icon {
+    color: #34b7f1;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+    position: relative; 
+}
+
+.sender-message {
+    background-color: #d1f2eb;
+    align-self: flex-end;
+    border-radius: 15px 15px 0px 15px;
+    padding: 8px 12px;
+    position: relative; 
+}
+
+
+.receiver-message {
+    background-color: #e0e0e0;
+    align-self: flex-start;
+    border-radius: 15px 15px 15px 0px;
+    padding: 8px 12px;
+    position: relative; 
+}
+
+/* Estilos para el ícono de verificación */
+.check-icon {
+    font-size: 14px; 
+    color: gray; 
+    position: absolute; 
+    bottom: 5px; 
+    right: 10px; 
+}
+
+
+.sender-message .check-icon {
+    color: #34b7f1; 
+}
